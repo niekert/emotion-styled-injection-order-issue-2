@@ -1,12 +1,13 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 // Import styled first
 import styled from 'styled-components';
-import OverridenComponent from './OverridenComponent';
-import { Card } from './style';
-
-const StyledComponent = styled.div`
+const StyledComponent = styled('div')`
   background: red;
 `;
+
+import OverridenComponent from './OverridenComponent';
+import { Card } from './style';
 
 class App extends Component {
   render() {
